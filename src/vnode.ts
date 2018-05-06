@@ -1,6 +1,6 @@
 
 /**
- * 
+ *
  * @param sel 选择器
  * @param data 绑定的数据
  * @param children 子节点数组
@@ -27,12 +27,12 @@
 
 
 export function vnode(
-    sel: string | undefined, 
-    data: any | undefined, 
-    children: Array<VNode | string>, 
-    text: string | undefined, 
+    sel: string | undefined,
+    data: any | undefined,
+    children: Array<VNode | string>,
+    text: string | undefined,
     elm: Element | Text | undefined): VNode {
-    let key = data === undefined ? undefined : data.key;
+    let key = data === void 0 ? void 0 : data.key;
     return {
         sel,
         data,
